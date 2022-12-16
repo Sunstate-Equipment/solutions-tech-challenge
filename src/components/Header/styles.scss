@@ -1,0 +1,15 @@
+@import "../../styles/theme.scss";
+
+.header {
+  padding: $padding-size-xl;
+
+  &__background {
+    padding: $padding-size-lg;
+    background-color: $secondary;
+  }
+  &__text {
+    color: $text-light;
+    font-size: $font-size-lg;
+    text-align: center;
+  }
+}

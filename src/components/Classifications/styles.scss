@@ -1,0 +1,25 @@
+@import "../../styles/theme.scss";
+
+.classifications {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  .classification {
+    margin: $margin-size-lg;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    @media screen and (min-width: $screen-size-sm) {
+      flex-flow: row;
+    }
+    &__title {
+      margin: $margin-size-lg;
+      text-transform: uppercase;
+      font-weight: bold;
+      letter-spacing: 1px;
+      @media screen and (min-width: $screen-size-sm) {
+        flex: 0 0 116px;
+      }
+    }
+  }
+}

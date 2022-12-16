@@ -1,0 +1,80 @@
+@import "../../styles/theme.scss";
+
+.skill {
+  margin: $margin-size-sm;
+  position: relative;
+  transition: all 0.3s ease 0s;
+  &:hover {
+    cursor: pointer;
+  }
+  @media screen and (min-width: $screen-size-md) {
+    margin: $margin-size-xl;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 16px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    @media screen and (min-width: $screen-size-sm) {
+      width: 16px;
+      height: 10px;
+      top: 50%;
+      transform: translate(0, -50%);
+      left: 100%;
+    }
+    @media screen and (min-width: $screen-size-md) {
+      width: 64px;
+    }
+  }
+
+  &__container {
+    overflow: hidden;
+    position: relative;
+    width: 56px;
+    height: 56px;
+  }
+
+  &--not-selected {
+    background: linear-gradient(
+      0deg,
+      $secondary-light,
+      $secondary-dark 50%,
+      $secondary-light 50%,
+      $secondary-light 100%
+    );
+
+    &::after {
+      background: $secondary-dark;
+    }
+  }
+  &--selected {
+    background: linear-gradient(
+      0deg,
+      $primary-light,
+      $primary-dark 50%,
+      $primary-light 50%,
+      $primary-light 100%
+    );
+    box-shadow: 0 0 3px 3px $secondary-light;
+
+    &::after {
+      background: $secondary-light;
+    }
+  }
+  &__img {
+    content: url(../../assets/images/sprites/talent-icons-sprite.png);
+  }
+
+  &:last-child::after {
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    left: 0%;
+    transform: translate(0, 0);
+    background: none;
+  }
+}

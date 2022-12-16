@@ -1,0 +1,24 @@
+@import "../styles/theme.scss";
+
+.App {
+  background: url(../assets/images/backgrounds/talent-calc-bg.png) no-repeat
+    center center fixed;
+  background-size: cover;
+
+  height: 100%;
+  width: 100%;
+
+  color: $text-light;
+
+  overflow: auto;
+
+  &__Container {
+    display: flex;
+    flex-flow: column-reverse;
+    align-items: center;
+    @media screen and (min-width: $screen-size-md) {
+      flex-flow: row;
+      justify-content: center;
+    }
+  }
+}

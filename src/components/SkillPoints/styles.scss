@@ -1,0 +1,18 @@
+@import "../../styles/theme.scss";
+
+.skill-points {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #101214;
+  background-color: #080a0c;
+  padding: $padding-size-lg;
+  width: 100px;
+  // height: 80px;
+  &__title {
+    color: $primary;
+  }
+  &__points {
+  }
+}
