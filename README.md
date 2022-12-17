@@ -5,6 +5,6 @@
 [Deployed Site](https://skill-tree.codesagas.dev/)
 
 ## Chanlenge URL
-https://stackblitz.com/edit/vitejs-vite-kcjdp7?file=package.json
+[Let's fix it!](https://stackblitz.com/edit/vitejs-vite-kcjdp7?file=src/main.tsx)
 
 ## Process
