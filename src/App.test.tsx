@@ -1,4 +1,4 @@
-import React from "react";
+import { expect, test } from "vitest";
 import {
   render,
   screen,
@@ -10,6 +10,7 @@ import {
 import App from "./App";
 import * as get from "./api/get";
 import { Users } from "./api";
+
 // write some basic test to know that the criteria is met
 
 /**
