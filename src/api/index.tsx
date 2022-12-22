@@ -310,6 +310,12 @@ export interface User {
   // classification: Classification;
 }
 
+export const AnonymousUser: User = {
+  name: "Anonymous",
+  skills: [],
+  skillPoints: 0,
+};
+
 /**
  * Users
  *

@@ -33,9 +33,9 @@ export function reducer(state: AppState, { type, payload }: ActionInfo) {
       // TODO: make sure we can add a skill we can only add so many
       const { id } = payload;
 
-      const newSkills = state?.user?.skills.includes(id)
-        ? state?.user?.skills
-        : [...(state?.user?.skills || []), id];
+      const newSkills = state.user.skills.includes(id)
+        ? state.user.skills
+        : [...(state.user.skills || []), id];
       const skills = validateSkills(state.skills || [], newSkills);
       return {
         ...state,
@@ -53,7 +53,7 @@ export function reducer(state: AppState, { type, payload }: ActionInfo) {
     case ACTIONS.REMOVE_SKILL: {
       const { id } = payload;
 
-      const newSkills: string[] | undefined = state?.user?.skills.filter(
+      const newSkills: string[] | undefined = state.user.skills.filter(
         (skill) => skill !== id
       );
 
